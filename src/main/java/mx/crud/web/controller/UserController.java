@@ -34,7 +34,7 @@ public class UserController {
 	    List<UserResource> userResourceList = new ArrayList<UserResource>();
 	    UserResponse response = new UserResponse();
 	  
-	    List<User> userList = userService.getaAllUsers();
+	    List<User> userList = userService.getAllUsers();
 	  
 	    if (userList.isEmpty()) {
             return new ResponseEntity<UserResponse>(response, HttpStatus.NO_CONTENT);
