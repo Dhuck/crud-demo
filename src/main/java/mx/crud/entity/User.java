@@ -1,4 +1,4 @@
-package mx.crud;
+package mx.crud.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

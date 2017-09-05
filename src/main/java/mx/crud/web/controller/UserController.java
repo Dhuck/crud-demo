@@ -13,7 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import mx.crud.User;
+import mx.crud.entity.User;
 import mx.crud.service.UserService;
 import mx.crud.web.resource.UserResource;
 import mx.crud.web.response.UserResponse;

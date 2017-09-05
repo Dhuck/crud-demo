@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import mx.crud.User;
-import mx.crud.UserRepository;
+import mx.crud.entity.User;
+import mx.crud.repository.UserRepository;
 import mx.crud.utils.IterableToList;
 
 @Service
