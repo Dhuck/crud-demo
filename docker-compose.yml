@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  crud-api:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+
+  #TODO: Temporary assignment to Environment variables.
+  db:
+    environment: 
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_DATABASE: "crud"
+      MYSQL_USER: "demo"
+      MYSQL_PASSWORD: "demo"
+    image: mysql:5.6.27
+    ports:
+      - 3306:3306
