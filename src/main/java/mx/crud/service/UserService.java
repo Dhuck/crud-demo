@@ -17,7 +17,7 @@ public class UserService {
     UserRepository userRepository;
 
     @Transactional(readOnly = true)
-    public List<User> getaAllUsers() {
+    public List<User> getAllUsers() {
     	IterableToList toList = new IterableToList();
     	return toList.toList(userRepository.findAll());
     }
