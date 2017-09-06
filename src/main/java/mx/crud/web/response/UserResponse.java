@@ -1,18 +1,16 @@
 package mx.crud.web.response;
 
-import java.util.List;
-
 import mx.crud.web.resource.UserResource;
 
 public class UserResponse {
 
-	private List<UserResource> users;
+	private UserResource user;
 
-	public List<UserResource> getUsers() {
-		return users;
+	public UserResource getUser() {
+		return user;
 	}
 
-	public void setUsers(final List<UserResource> users) {
-		this.users = users;
+	public void setUser(final UserResource user) {
+		this.user = user;
 	}
 }

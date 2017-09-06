@@ -21,4 +21,25 @@ public class UserService {
     	IterableToList toList = new IterableToList();
     	return toList.toList(userRepository.findAll());
     }
+    
+    @Transactional(readOnly = true)
+    public User getUsersById(Integer id) {    	
+    	return userRepository.findOne(id);
+    }
+
+    @Transactional
+    public void createUser(User user) {
+    	userRepository.save(user);
+    }
+
+    @Transactional
+    public User updateUser(User user) {
+    	return userRepository.save(user);
+    }
+
+    @Transactional
+    public void deleteUser(User user) {
+    	userRepository.delete(user);
+    }
+
 }
