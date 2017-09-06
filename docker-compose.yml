@@ -8,7 +8,7 @@ services:
     ports:
       - 8080:8080
 
-  #TODO: Temporary assignment to Environment variables.
+  #TODO: Temporary assignment to Environment variables, create windows environment variables
   db:
     environment: 
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"

@@ -61,5 +61,24 @@
 		</plugins>
 	</build>
 	
-	
+	<profiles>
+	    <!-- localhost environment -->
+		<profile>
+		    <id>local</id>
+		    <activation>
+		        <activeByDefault>true</activeByDefault>
+		    </activation>
+		    <properties>
+		        <activatedProperties>local</activatedProperties>
+		    </properties>
+		</profile>
+		<!-- Docker environment -->
+		<profile>
+			<id>test</id>
+			<properties>
+				<activatedProperties>test</activatedProperties>
+			</properties>
+		</profile>
+	</profiles>
+
 </project>
