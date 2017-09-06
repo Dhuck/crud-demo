@@ -21,6 +21,7 @@ DELETE	| /user/{userId}	| User delete	|
 ### Packaging project.
 * Retrieve available profiles: `mvn help:all-profiles`
 * Build with default profile: `mvn clean package -Plocal`
+* Build the project to test Docker inside: `mvn clean package -Ptest`
 
 ## Run.
 
