@@ -87,6 +87,7 @@ public class UserController {
     	User userUpdated = userService.updateUser(user);
 
     	UserResource resource = new UserResource();
+    	resource.setId(userUpdated.getId());
     	resource.setName(userUpdated.getName());
     	resource.setEmail(userUpdated.getEmail());
     	
@@ -94,7 +95,7 @@ public class UserController {
     	response.setUser(resource);
     	logger.info("User updated successfully: {}", userRequest);
 
-	    return new ResponseEntity<UserResponse>(HttpStatus.OK);
+	    return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
     }
 
     @DeleteMapping(value = "/{userId}")
