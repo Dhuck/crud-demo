@@ -33,9 +33,11 @@ DELETE	| /user/{userId}	| User delete	|
 * Docker and Docker compose installed and configured.
 
 ### Running on localhost.
+On project main path.
 * `java -Xmx200m -jar /target/crud-api.jar`
 
 ### Running on Docker.
+On project main path.
 * `docker-compose build`
 * `docker-compose up`
 
